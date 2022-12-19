@@ -1,4 +1,4 @@
-<html >
+<html>
 
 <head>
     <meta charset="UTF-8" />
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
 
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -19,90 +19,94 @@
     <nav class="navbar">
         <div class="navbar-container container">
             <ul class="menu-items">
-              
+
                 <li><a href="#beer">Beers</a></li>
                 <li><a href="#food">Food</a></li>
                 <li><a href="#food-menu">Cocktails & Mocktails</a></li>
                 <li><a href="#spirits-menu">Spirits</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
-            <h3 class="logo">Home</h3>
+            <h3 class="logo" style="margin-top: -20px;">Home</h3>
         </div>
     </nav>
 
 
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-            </div>
-            
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
                 <img src="cover.jpg" alt="Los Angeles" class="d-block" style="width:100vw ; height:75vh">
-              </div>
-              <div class="carousel-item">
-                <img src="cover2.jpg" alt="Chicago" class="d-block" style="width:100vw; height:75vh">
-              </div>
-              <div class="carousel-item">
-                <img src="C3.jpg" alt="New York" class="d-block" style="width:100vw; height:75vh">
-              </div>
-              <div class="carousel-item">
-                <img src="C4.jpg" alt="New York" class="d-block" style="width:100vw; height:75vh">
-              </div>
-
             </div>
-            
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
+            <div class="carousel-item">
+                <img src="cover2.jpg" alt="Chicago" class="d-block" style="width:100vw; height:75vh">
+            </div>
+            <div class="carousel-item">
+                <img src="C3.jpg" alt="New York" class="d-block" style="width:100vw; height:75vh">
+            </div>
+            <div class="carousel-item">
+                <img src="C4.jpg" alt="New York" class="d-block" style="width:100vw; height:75vh">
+            </div>
+
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
 
     <!-- </section>  -->
-    
+    <a onclick="finalSum();" href="checkout.html" style="background-color: #2a614f; color:white; border: none; padding: 15px; border-radius: 5px; float: right;margin: 20px;
+    text-decoration: none;">
+        CHECKOUT
+    </a>
 
-    <section id="beer">
+    <section id="beer" style="margin-top: 100px; width: 100%;">
         <h2 class="food-menu-heading">Beers</h2>
-            <div class="food-menu-container container">
+        <div class="food-menu-container">
+            <div style="display: flex; flex-direction: row; margin-left: 100px;">
                 <div class="food-menu-item">
-                    <div class="food-img">
+                    <div class=" food-img">
                         <img src="beer1.jpg" alt="" />
                     </div>
-                    <div class="food-description" id="GA" style="width:800px" >
+                    <div class="food-description" id="1">
                         <h2 class="food-titile">Golden Ale(Abv 4.7%)</h2>
                         <p>
-                            Dry, light body, crisp,floral with low bitterne, clove and bubble gum (4.7%). 
+                            Dry, light body, crisp,floral with low bitterne, clove and bubble gum (4.7%).
                         </p>
                         <p class="food-price">Price: &#8377; 350</p>
                         <p>
-                            <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                            <button class="button">
+
+                            <button class="button" onclick="addToCart1('Golden Ale');">
                                 <span>Add to cart</span>
                                 <div class="cart">
-                                <svg viewBox="0 0 36 26">
-                                <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                                <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                                </svg>
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
                                 </div>
-                                </button>
+                            </button>
                         </p>
                     </div>
                 </div>
-    
+
                 <div class="food-menu-item">
                     <div class="food-img">
                         <img src="beer2.jpg" alt="error" />
                     </div>
-                    <div class="food-description" style="width:800px">
+                    <div class="food-description">
                         <h2 class="food-titile">Hefeweizen Abv 5%</h2>
                         <p>
                             German style wheat beer, with flavour of banana, clove and bubble gum.
@@ -110,15 +114,15 @@
                         <p class="food-price">Price: &#8377; 350</p>
                         <p>
                             <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                            <button class="button">
+                            <button class="button" onclick="addToCart1('Hefeweizen');">
                                 <span>Add to cart</span>
                                 <div class="cart">
-                                <svg viewBox="0 0 36 26">
-                                <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                                <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                                </svg>
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
                                 </div>
-                                </button>
+                            </button>
                         </p>
                     </div>
                 </div>
@@ -126,47 +130,50 @@
                     <div class="food-img">
                         <img src="beer3.jpg" alt="" />
                     </div>
-                    <div class="food-description" style="width:800px">
+                    <div class="food-description">
                         <h2 class="food-titile">IPA (Abv 6.2%)</h2>
                         <p>
-                           India pale ale,hoppy,malty,citrusy,finishing with fruity flavour and bitterness.
+                            India pale ale,hoppy,malty,citrusy,finishing with fruity flavour and bitterness.
                         </p>
                         <p class="food-price">Price: &#8377; 350</p>
                         <p>
                             <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                            <button class="button">
+                            <button class="button" onclick="addToCart1('IPA(6.2%)');">
                                 <span>Add to cart</span>
                                 <div class="cart">
-                                <svg viewBox="0 0 36 26">
-                                <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                                <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                                </svg>
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
                                 </div>
-                                </button>
+                            </button>
                         </p>
                     </div>
                 </div>
+            </div>
+            <div style="display: flex; flex-direction: row; margin-left: 100px;">
                 <div class="food-menu-item">
                     <div class="food-img">
                         <img src="beer4.jpg" alt="" />
                     </div>
-                    <div class="food-description" style="width:800px">
+                    <div class="food-description">
                         <h2 class="food-titile">Red Ale (Abv-6.1%)</h2>
                         <p>
-                            Medium body ale with moderate caramel,sweet,light toasty or toffee flavour along with dry finish. (ABV 6.1%)                            
+                            Medium body ale with moderate caramel,sweet,light toasty or toffee flavour along with dry
+                            finish. (ABV 6.1%)
                         </p>
                         <p class="food-price">Price: &#8377; 350</p>
                         <p>
                             <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                            <button class="button">
+                            <button class="button" onclick="addToCart1('Red Ale');">
                                 <span>Add to cart</span>
                                 <div class="cart">
-                                <svg viewBox="0 0 36 26">
-                                <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                                <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                                </svg>
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
                                 </div>
-                                </button>
+                            </button>
                         </p>
                     </div>
                 </div>
@@ -174,7 +181,7 @@
                     <div class="food-img">
                         <img src="beer5.jpg" alt="" />
                     </div>
-                    <div class="food-description" style="width:800px">
+                    <div class="food-description">
                         <h2 class="food-titile">Weizenbock (Abv 7.2%)</h2>
                         <p>
                             German style dark wheat beer, flavour of banana, caramel and toffee. (Abv 7.2%)
@@ -182,30 +189,32 @@
                         <p class="food-price">Price: &#8377; 350</p>
                         <p>
                             <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                            <button class="button">
+                            <button class="button" onclick="addToCart1('Weizenbock');">
                                 <span>Add to cart</span>
                                 <div class="cart">
-                                <svg viewBox="0 0 36 26">
-                                <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                                <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                                </svg>
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
                                 </div>
-                                </button>
+                            </button>
                         </p>
                     </div>
                 </div>
-            
             </div>
+
+        </div>
     </section>
     <section id="food">
-       
-            <h2 class="food-menu-heading">Food Menu</h2>
-            <div class="food-menu-container container">
+
+        <h2 class="food-menu-heading">Food Menu</h2>
+        <div class="food-menu-container">
+            <div style="display: flex; flex-direction: row; margin-left: 100px;">
                 <div class="food-menu-item">
                     <div class="food-img">
                         <img src="https://i.postimg.cc/wTLMsvSQ/food-menu1.jpg" alt="" />
                     </div>
-                    <div class="food-description" style="width:800px">
+                    <div class="food-description">
                         <h2 class="food-titile">Pickled Beetroot and Walnut Salad</h2>
                         <p>
                             Pickle beetroot salad,mascarpone mousse,feta crumble,caramelized figs and salad leaves.
@@ -213,24 +222,24 @@
                         <p class="food-price">Price: &#8377; 325</p>
                         <p>
                             <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                            <button class="button">
+                            <button class="button" onclick="addToCart1('Pickled Beetroot Walnut Salad');">
                                 <span>Add to cart</span>
                                 <div class="cart">
-                                <svg viewBox="0 0 36 26">
-                                <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                                <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                                </svg>
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
                                 </div>
-                                </button>
+                            </button>
                         </p>
                     </div>
                 </div>
-    
+
                 <div class="food-menu-item">
                     <div class="food-img">
                         <img src="https://i.postimg.cc/sgzXPzzd/food-menu2.jpg" alt="error" />
                     </div>
-                    <div class="food-description" style="width:800px">
+                    <div class="food-description">
                         <h2 class="food-titile">Veg Caesar Salad</h2>
                         <p>
                             Salad leaves with Caesar dressing, parmesan shaving and garlic crouton(grilled vegetable)
@@ -238,15 +247,15 @@
                         <p class="food-price">Price: &#8377; 290</p>
                         <p>
                             <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                            <button class="button">
+                            <button class="button" onclick="addToCart1('Veg Caesar Salad');">
                                 <span>Add to cart</span>
                                 <div class="cart">
-                                <svg viewBox="0 0 36 26">
-                                <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                                <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                                </svg>
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
                                 </div>
-                                </button>
+                            </button>
                         </p>
                     </div>
                 </div>
@@ -254,7 +263,7 @@
                     <div class="food-img">
                         <img src="lotusstem.jpg" alt="" />
                     </div>
-                    <div class="food-description" style="width:800px">
+                    <div class="food-description">
                         <h2 class="food-titile">Lotus Stem</h2>
                         <p>
                             Crispy thin silvers of lotus stem, peri peri dust served with hummus, babaganoush.
@@ -262,23 +271,25 @@
                         <p class="food-price">Price: &#8377; 145</p>
                         <p>
                             <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                            <button class="button">
+                            <button class="button" onclick="addToCart1('Lotus Stem');">
                                 <span>Add to cart</span>
                                 <div class="cart">
-                                <svg viewBox="0 0 36 26">
-                                <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                                <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                                </svg>
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
                                 </div>
-                                </button>
+                            </button>
                         </p>
                     </div>
                 </div>
+            </div>
+            <div style="display: flex; flex-direction: row; margin-left: 100px;">
                 <div class="food-menu-item">
                     <div class="food-img">
                         <img src="https://i.postimg.cc/Yq98p5Z7/food-menu4.jpg" alt="" />
                     </div>
-                    <div class="food-description" style="width:800px">
+                    <div class="food-description">
                         <h2 class="food-titile">Harissa Paneer Quesadilla, Garlic Toum</h2>
                         <p>
                             Cottage cheese tossed coated with harissa grilled and folded in quesadilla in tortilla.
@@ -286,15 +297,15 @@
                         <p class="food-price">Price: &#8377; 345</p>
                         <p>
                             <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                            <button class="button">
+                            <button class="button" onclick="addToCart1('Paneer Quesadilla');">
                                 <span>Add to cart</span>
                                 <div class="cart">
-                                <svg viewBox="0 0 36 26">
-                                <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                                <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                                </svg>
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
                                 </div>
-                                </button>
+                            </button>
                         </p>
                     </div>
                 </div>
@@ -302,7 +313,7 @@
                     <div class="food-img">
                         <img src="https://i.postimg.cc/KYnDqxkP/food-menu5.jpg" alt="" />
                     </div>
-                    <div class="food-description" style="width:800px">
+                    <div class="food-description">
                         <h2 class="food-titile">Mezze Platter</h2>
                         <p>
                             Pita bread served with hummus, babaganoush, tzatziki, Arabic pickled veg and Fattoush.
@@ -310,15 +321,15 @@
                         <p class="food-price">Price: &#8377; 345</p>
                         <p>
                             <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                            <button class="button">
+                            <button class="button" onclick="addToCart1('Mezze Platter');">
                                 <span>Add to cart</span>
                                 <div class="cart">
-                                <svg viewBox="0 0 36 26">
-                                <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                                <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                                </svg>
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
                                 </div>
-                                </button>
+                            </button>
                         </p>
                     </div>
                 </div>
@@ -326,7 +337,7 @@
                     <div class="food-img">
                         <img src="chilipaneer.jpg" alt="" />
                     </div>
-                    <div class="food-description" style="width:800px">
+                    <div class="food-description">
                         <h2 class="food-titile">Street Style Chilli Paneer</h2>
                         <p>
                             Wok tossed cottage cheese with scallion,sweet peppers and Chinese spices.
@@ -334,284 +345,416 @@
                         <p class="food-price">Price: &#8377; 325</p>
                         <p>
                             <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                            <button class="button">
+                            <button class="button" onclick="addToCart1('Chilli Paneer');">
                                 <span>Add to cart</span>
                                 <div class="cart">
-                                <svg viewBox="0 0 36 26">
-                                <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                                <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                                </svg>
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
                                 </div>
-                                </button>
+                            </button>
                         </p>
                     </div>
                 </div>
             </div>
-   
+        </div>
+
     </section>
     <section id="food-menu">
         <h2 class="food-menu-heading">Cocktails & Mocktails</h2>
-        <div class="food-menu-container container">
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="cocktail1.jpg" alt="" />
-                </div>
-                 <div class="food-description"  style="width:800px"> 
-                    <h2 class="food-titile">Cosmopolitan</h2>
-                    <p>
-                        Vodka,Lime Juice,cranberry juice, triple sec
-                    </p>
-                    <p class="food-price">Price: &#8377; 450</p>
-                    <p>
-                        <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                        <button class="button">
-                            <span>Add to cart</span>
-                            <div class="cart">
-                            <svg viewBox="0 0 36 26">
-                            <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                            <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                            </svg>
-                            </div>
+        <div class="food-menu-container">
+            <div style="display: flex; flex-direction: row; margin-left: 100px;">
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="cocktail1.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Cosmopolitan</h2>
+                        <p>
+                            Vodka,Lime Juice,cranberry juice, triple sec
+                        </p>
+                        <p class="food-price">Price: &#8377; 450</p>
+                        <p>
+                            <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
+                            <button class="button" onclick="addToCart1('Cosmopolitan');">
+                                <span>Add to cart</span>
+                                <div class="cart">
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
+                                </div>
                             </button>
-                    </p>
-                 </div> 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="cocktail2.jpg" alt="error" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Gin & Tonic</h2>
+                        <p>
+                            Gin, Tonic Water
+                        </p>
+                        <p class="food-price">Price: &#8377; 450</p>
+                        <p>
+                            <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
+                            <button class="button" onclick="addToCart1('Gin&Tonic');">
+                                <span>Add to cart</span>
+                                <div class="cart">
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
+                                </div>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="cocktail3.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Melon and Peach cooler</h2>
+                        <p>
+                            Watermelon chunks , Fresh Basil, Peach Syrup, Lime Juice, Pineapple Juice, Sprite
+                        </p>
+                        <p class="food-price">Price: &#8377; 250</p>
+                        <p>
+                            <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
+                            <button class="button" onclick="addToCart1('Melon Peach cooler');">
+                                <span>Add to cart</span>
+                                <div class="cart">
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
+                                </div>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: row; margin-left: 100px;">
+
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="cocktail4.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Fruit Punch</h2>
+                        <p>
+                            Pineapple juice, orange juice, litchi juice,strawberry crush, fresh cream
+                        </p>
+                        <p class="food-price">Price: &#8377; 215</p>
+                        <p>
+                            <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
+                            <button class="button" onclick="addToCart1('Fruit Punch');">
+                                <span>Add to cart</span>
+                                <div class="cart">
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
+                                </div>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="cocktial5.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Virgin Passion</h2>
+                        <p>
+                            Pineapple juice, Fresh Ginger Juice, Fresh lime juice & passion fruit syrup
+                        </p>
+                        <p class="food-price">Price: &#8377; 215</p>
+                        <p>
+                            <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
+                            <button class="button" onclick="addToCart1('Virgin Passion');">
+                                <span>Add to cart</span>
+                                <div class="cart">
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
+                                </div>
+                            </button>
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="cocktail2.jpg" alt="error" />
-                </div>
-                <div class="food-description" style="width:800px">
-                    <h2 class="food-titile">Gin & Tonic</h2>
-                    <p>
-                        Gin, Tonic Water
-                    </p>
-                    <p class="food-price">Price: &#8377; 450</p>
-                    <p>
-                        <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                        <button class="button">
-                            <span>Add to cart</span>
-                            <div class="cart">
-                            <svg viewBox="0 0 36 26">
-                            <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                            <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                            </svg>
-                            </div>
-                            </button>
-                    </p>
-                </div>
-            </div>
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="cocktail3.jpg" alt="" />
-                </div>
-                <div class="food-description" style="width:800px">
-                    <h2 class="food-titile">Melon and Peach cooler</h2>
-                    <p>
-                        Watermelon chunks , Fresh Basil, Peach Syrup, Lime Juice, Pineapple Juice, Sprite
-                    </p>
-                    <p class="food-price">Price: &#8377; 250</p>
-                    <p>
-                        <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                        <button class="button">
-                            <span>Add to cart</span>
-                            <div class="cart">
-                            <svg viewBox="0 0 36 26">
-                            <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                            <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                            </svg>
-                            </div>
-                            </button>
-                    </p>
-                </div>
-            </div>
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="cocktail4.jpg" alt="" />
-                </div>
-                <div class="food-description" style="width:800px">
-                    <h2 class="food-titile">Fruit Punch</h2>
-                    <p>
-                        Pineapple juice, orange juice, litchi juice,strawberry crush, fresh cream
-                    </p>
-                    <p class="food-price">Price: &#8377; 215</p>
-                    <p>
-                        <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                        <button class="button">
-                            <span>Add to cart</span>
-                            <div class="cart">
-                            <svg viewBox="0 0 36 26">
-                            <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                            <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                            </svg>
-                            </div>
-                            </button>
-                    </p>
-                </div>
-            </div>
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="cocktial5.jpg" alt="" />
-                </div>
-                <div class="food-description" style="width:800px">
-                    <h2 class="food-titile"Virgin Passion></h2>
-                    <p>
-                        Pineapple juice, Fresh Ginger Juice, Fresh lime juice & passion fruit syrup
-                    </p>
-                    <p class="food-price">Price: &#8377; 215</p>
-                    <p>
-                        <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                        <button class="button">
-                            <span>Add to cart</span>
-                            <div class="cart">
-                            <svg viewBox="0 0 36 26">
-                            <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                            <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                            </svg>
-                            </div>
-                            </button>
-                    </p>
-                </div>
-            </div>
-           
         </div>
     </section>
-   
+
     <section id="spirits-menu">
         <h2 class="food-menu-heading">Spirits</h2>
-        <div class="food-menu-container container">
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="spirit1.jpg" alt="" />
-                </div>
-                <div class="food-description" style="width:800px">
-                    <h2 class="food-titile">Martini Fiero (30 ml)</h2>
-                    <p>
-                        
-                    </p>
-                    <p class="food-price">Price: &#8377; 170</p>
-                    <p>
-                        <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                        <button class="button">
-                            <span>Add to cart</span>
-                            <div class="cart">
-                            <svg viewBox="0 0 36 26">
-                            <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                            <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                            </svg>
-                            </div>
-                            </button>
-                    </p>
-                </div>
-            </div>
+        <div class="food-menu-container">
+            <div style="display: flex; flex-direction: row; margin-left: 100px;">
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="spirit1.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Martini Fiero (30 ml)</h2>
+                        <p>
 
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="spirit2.jpg" alt="error" />
-                </div>
-                <div class="food-description" style="width:800px">
-                    <h2 class="food-titile">Martini Bianco (30 ml)</h2>
-                    <p>
-                        
-                    </p>
-                    <p class="food-price">Price: &#8377; 270</p>
-                    <p>
-                        <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                        <button class="button">
-                            <span>Add to cart</span>
-                            <div class="cart">
-                            <svg viewBox="0 0 36 26">
-                            <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                            <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                            </svg>
-                            </div>
+                        </p>
+                        <p class="food-price">Price: &#8377; 170</p>
+                        <p>
+                            <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
+                            <button class="button" onclick="addToCart1('Martini Fiero');">
+                                <span>Add to cart</span>
+                                <div class="cart">
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
+                                </div>
                             </button>
-                    </p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="spirit2.jpg" alt="error" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Martini Bianco (30 ml)</h2>
+                        <p>
+
+                        </p>
+                        <p class="food-price">Price: &#8377; 270</p>
+                        <p>
+                            <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
+                            <button class="button" onclick="addToCart1('Martini Bianco');">
+                                <span>Add to cart</span>
+                                <div class="cart">
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
+                                </div>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="spirit3.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Martino Rosso (30 ml)</h2>
+                        <p>
+
+                        </p>
+                        <p class="food-price">Price: &#8377; 275</p>
+                        <p>
+                            <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
+                            <button class="button" onclick="addToCart1('Martini Rosso');">
+                                <span>Add to cart</span>
+                                <div class="cart">
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
+                                </div>
+                            </button>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="spirit3.jpg" alt="" />
-                </div>
-                <div class="food-description" style="width:800px">
-                    <h2 class="food-titile">Martino Rosso (30 ml)</h2>
-                    <p>
-                       
-                    </p>
-                    <p class="food-price">Price: &#8377; 275</p>
-                    <p>
-                        <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                        <button class="button">
-                            <span>Add to cart</span>
-                            <div class="cart">
-                            <svg viewBox="0 0 36 26">
-                            <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                            <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                            </svg>
-                            </div>
+            <div style="display: flex; flex-direction: row; margin-left: 100px;">
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="spirit4.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Old Monk</h2>
+                        <p>
+
+                        </p>
+                        <p class="food-price">Price: &#8377; 145</p>
+                        <p>
+                            <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
+                            <button class="button" onclick="addToCart1('Old Monk');">
+                                <span>Add to cart</span>
+                                <div class="cart">
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
+                                </div>
                             </button>
-                    </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="spirit5.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Bacardi Cuatro (4yrs)</h2>
+                        <p>
+
+                        </p>
+                        <p class="food-price">Price: &#8377; 575</p>
+                        <p>
+                            <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
+                            <button class="button" onclick="addToCart1('Bacardi Cuatro');">
+                                <span>Add to cart</span>
+                                <div class="cart">
+                                    <svg viewBox="0 0 36 26">
+                                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                    </svg>
+                                </div>
+                            </button>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="spirit4.jpg" alt="" />
-                </div>
-                <div class="food-description" style="width:800px">
-                    <h2 class="food-titile">Old Monk</h2>
-                    <p>
-                        
-                    </p>
-                    <p class="food-price">Price: &#8377; 145</p>
-                    <p>
-                        <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                        <button class="button">
-                            <span>Add to cart</span>
-                            <div class="cart">
-                            <svg viewBox="0 0 36 26">
-                            <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                            <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                            </svg>
-                            </div>
-                            </button>
-                    </p>
-                </div>
-            </div>
-            <div class="food-menu-item">
-                <div class="food-img">
-                    <img src="spirit5.jpg" alt="" />
-                </div>
-                <div class="food-description" style="width:800px">
-                    <h2 class="food-titile">Bacardi Cuatro (4yrs)</h2>
-                    <p>
-                        
-                    </p>
-                    <p class="food-price">Price: &#8377; 575</p>
-                    <p>
-                        <!-- <button onclick="addToCartFun()">Add to Cart</button> -->
-                        <button class="button">
-                            <span>Add to cart</span>
-                            <div class="cart">
-                            <svg viewBox="0 0 36 26">
-                            <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                            <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                            </svg>
-                            </div>
-                            </button>
-                    </p>
-                </div>
-            </div>
-           
         </div>
     </section>
-<script>
+
+    <script>
+
+        function addToCart1(foodItem) {
+            console.log(foodItem)
+            let abc = JSON.parse(sessionStorage.getItem("item"))
+            // abc.push(foodItem)
+            if (sessionStorage.getItem("item") === null) {
+                // console.log()
+                abc = []
+            }
+            abc.push(foodItem)
+            sessionStorage.setItem("item", JSON.stringify(abc));
+            // const element = document.getElementById()
+        }
+
+        function finalSum() {
+            let finall = JSON.parse(sessionStorage.getItem("item"))
+            console.log(finall, typeof finall, "expanded object with items selected");
+            const count = {};
+
+            for (const element of finall) {
+                if (count[element]) {
+                    count[element] += 1;
+                } else {
+                    count[element] = 1;
+                }
+            }
+
+            console.log(count, typeof count, "object with each item and no of times");
+            let itemNameArray;
+            itemNameArray = Object.keys(count); console.log(itemNameArray);
+            let itemCountArray;
+            itemCountArray = Object.values(count); console.log(itemCountArray)
+            let singleItemName;
+            let singleItemCount;
+            // let itemPriceArray = [];
+
+            let def = JSON.parse(sessionStorage.getItem("itemPriceArray"))
+            if (sessionStorage.getItem("itemPriceArray") === null) {
+                def = []
+            }
+
+            let singleItemPrice = 0;
+            for (let i = 0; i < itemNameArray.length; i++) {
+                singleItemName = itemNameArray[i];
+                singleItemCount = itemCountArray[i];
+                console.log(i, singleItemName, typeof singleItemName, singleItemCount, typeof singleItemCount)
+
+                //---------------------------
+                if (singleItemName == "Golden Ale") {
+                    singleItemPrice = 350;
+                }
+                if (singleItemName == "Hefeweizen") {
+                    singleItemPrice = 350;
+                }
+                if (singleItemName == "IPA(6.2%)") {
+                    singleItemPrice = 350;
+                }
+                if (singleItemName == "Red Ale") {
+                    singleItemPrice = 350;
+                }
+                if (singleItemName == "Weizenbock") {
+                    singleItemPrice = 350;
+                }
+                if (singleItemName == "Pickled Beetroot Walnut Salad") {
+                    singleItemPrice = 325;
+                }
+                if (singleItemName == "Veg Caesar Salad") {
+                    singleItemPrice = 290;
+                }
+                if (singleItemName == "Lotus Stem") {
+                    singleItemPrice = 145;
+                }
+                if (singleItemName == "Paneer Quesadilla") {
+                    singleItemPrice = 345;
+                }
+                if (singleItemName == "Mezze Platter") {
+                    singleItemPrice = 345;
+                }
+                if (singleItemName == "Chilli Paneer") {
+                    singleItemPrice = 325;
+                }
+                if (singleItemName == "Cosmopolitan") {
+                    singleItemPrice = 450;
+                }
+                if (singleItemName == "Gin&Tonic") {
+                    singleItemPrice = 450;
+                }
+                if (singleItemName == "Melon Peach cooler") {
+                    singleItemPrice = 250;
+                }
+                if (singleItemName == "Fruit Punch") {
+                    singleItemPrice = 215;
+                }
+                if (singleItemName == "Virgin Passion") {
+                    singleItemPrice = 215;
+                }
+                if (singleItemName == "Martini Bianco") {
+                    singleItemPrice = 270;
+                }
+                if (singleItemName == "Martini Rosso") {
+                    singleItemPrice = 275;
+                }
+                if (singleItemName == "Old Monk") {
+                    singleItemPrice = 145;
+                }
+                if (singleItemName == "Bacardi Cuatro") {
+                    singleItemPrice = 575;
+                }
 
 
-</script>
+
+
+
+                //----------------------------
+
+
+                ///all other ifs
+                def.push(singleItemCount * singleItemPrice)
+            }
+            sessionStorage.setItem("itemPriceArray", def);
+            sessionStorage.setItem("itemNameArray", itemNameArray);
+            sessionStorage.setItem("itemCountArray", itemCountArray);
+        }
+
+    </script>
     <footer id="footer">
         <h2>Restraunt &copy; all rights reserved</h2>
     </footer>
-   
+
 
 </html>
 
