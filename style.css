@@ -85,6 +85,12 @@ footer p { font-size:13px; color:white; padding-bottom:0px; margin-bottom:8px;}
 	margin-bottom: 10px;
 	margin-left: auto;
 }
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: rgb(184, 184, 85); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 .foote_bottom_ul_amrc li { display:inline;}
 .foote_bottom_ul_amrc li a { color:#fff; margin:0 12px;}
 
